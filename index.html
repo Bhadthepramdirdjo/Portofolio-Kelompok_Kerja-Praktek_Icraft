@@ -30,8 +30,19 @@
 
         .team-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
             border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .card-blue:hover {
+            box-shadow: 0 15px 50px rgba(14, 165, 233, 0.25);
+        }
+
+        .card-yellow:hover {
+            box-shadow: 0 15px 50px rgba(250, 204, 21, 0.25);
+        }
+
+        .card-green:hover {
+            box-shadow: 0 15px 50px rgba(16, 185, 129, 0.25);
         }
 
         .avatar-ring-blue {
@@ -75,7 +86,7 @@
 
             <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
                 <!-- Member 1: Bhadriko -->
-                <div class="team-card p-10 flex flex-col items-center text-center">
+                <div class="team-card card-blue p-10 flex flex-col items-center text-center">
                     <div
                         class="w-[104px] h-[104px] rounded-full p-[3px] avatar-ring-blue mb-6 shadow-lg shadow-blue-500/10">
                         <div
@@ -93,7 +104,7 @@
                 </div>
 
                 <!-- Member 2: Alfan -->
-                <div class="team-card p-10 flex flex-col items-center text-center">
+                <div class="team-card card-yellow p-10 flex flex-col items-center text-center">
                     <div
                         class="w-[104px] h-[104px] rounded-full p-[3px] avatar-ring-pink mb-6 shadow-lg shadow-pink-500/10">
                         <div
@@ -111,7 +122,7 @@
                 </div>
 
                 <!-- Member 3: Iqbal -->
-                <div class="team-card p-10 flex flex-col items-center text-center">
+                <div class="team-card card-green p-10 flex flex-col items-center text-center">
                     <div
                         class="w-[104px] h-[104px] rounded-full p-[3px] avatar-ring-green mb-6 shadow-lg shadow-green-500/10">
                         <div
