@@ -74,6 +74,28 @@
             font-weight: 500;
             color: #f1f5f9;
         }
+        .project-tech-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #e2e8f0;
+        }
+        .project-tech-tag img, .project-tech-tag svg {
+            width: 14px;
+            height: 14px;
+            object-fit: contain;
+        }
+        .tech-tag img, .tech-tag svg {
+            width: 16px;
+            height: 16px;
+            object-fit: contain;
+        }
     </style>
 </head>
 <body class="antialiased overflow-x-hidden min-h-screen">
@@ -131,9 +153,10 @@
                 <div class="p-1.5 bg-blue-500/10 rounded-lg text-cyan-400"><i data-lucide="user" class="w-4 h-4"></i></div>
                 Tentang Saya
             </h2>
-            <div class="profile-card text-gray-300 leading-relaxed text-[15px] space-y-3">
-                <p>Halo! Saya adalah seorang mahasiswa Teknik Informatika angkatan 2023 di Universitas Komputer Indonesia (UNIKOM) yang berfokus mendalami <strong>Front-End Web Development</strong>.</p>
-                <p>Saat ini saya aktif menjalani program magang di <strong>iCraft Internship 2026</strong>, terus mendalami teknologi antarmuka modern, interaktivitas JavaScript, dan desain responsif untuk menghasilkan pengalaman digital terbaik bagi pengguna.</p>
+            <div class="profile-card text-gray-300 leading-relaxed text-[15px] space-y-4">
+                <p>Halo, saya Bhadriko Theo Pramudya, mahasiswa S1 Teknik Informatika Universitas Komputer Indonesia (UNIKOM) yang berfokus pada pengembangan Front End Website Design dengan dukungan kemampuan PHP untuk kebutuhan sistem sederhana seperti form, login, dan pengolahan data dasar.</p>
+                <p>Saya terbiasa membuat tampilan website yang rapi, responsif, dan mudah digunakan, baik untuk kebutuhan tugas kuliah, UMKM, maupun landing page promosi. Dalam setiap proyek, saya mengutamakan komunikasi yang jelas, pengerjaan tepat waktu, serta hasil yang sesuai dengan kebutuhan klien.</p>
+                <p>Saat ini saya terbuka untuk berbagai pekerjaan seperti pembuatan landing page, website sederhana, maupun perbaikan tampilan website, dengan harga yang terjangkau namun tetap menjaga kualitas. Bagi saya, setiap proyek adalah langkah membangun kepercayaan dan kerja sama jangka panjang.</p>
             </div>
         </section>
 
@@ -172,46 +195,215 @@
                 Pendidikan
             </h2>
             
-            <div class="profile-card">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
-                    <h3 class="text-base md:text-lg font-bold text-white">S1 Teknik Informatika</h3>
-                    <span class="pill-badge self-start sm:self-auto">2023 - Sekarang</span>
+            <div class="space-y-4">
+                <!-- Pendidikan 1: UNIKOM -->
+                <div class="profile-card">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-1.5">
+                        <h3 class="text-base md:text-lg font-bold text-white">Teknik Informatika</h3>
+                        <span class="pill-badge self-start sm:self-auto">2023 - Sekarang</span>
+                    </div>
+                    <p class="text-xs font-bold text-cyan-400 uppercase tracking-wider mb-2.5">Universitas Komputer Indonesia (UNIKOM)</p>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-2">Sedang menempuh pendidikan program Sarjana (S1) di bidang Teknik Informatika.</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">Aktif dalam organisasi Himpunan Mahasiswa Teknik Informatika (HMIF) dan mengikuti berbagai kegiatan pengembangan diri di kampus.</p>
                 </div>
-                <p class="text-xs font-bold text-cyan-400 uppercase tracking-wider mb-3">Universitas Komputer Indonesia (UNIKOM)</p>
-                <p class="text-gray-300 text-sm leading-relaxed">Fokus studi mencakup Struktur Data & Algoritma, Rekayasa Perangkat Lunak, Pemrograman Web, dan Basis Data.</p>
+
+                <!-- Pendidikan 2: SMK -->
+                <div class="profile-card">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-1.5">
+                        <h3 class="text-base md:text-lg font-bold text-white">Rekayasa Perangkat Lunak</h3>
+                        <span class="pill-badge-muted self-start sm:self-auto">2020 - 2023</span>
+                    </div>
+                    <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2.5">SMK Negeri 1 Cimahi</p>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-2">Aktif terlibat dalam berbagai kepanitiaan kegiatan besar jurusan, organisasi, dan sekolah.</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">Menjadi Ketua Pelaksana dalam beberapa kegiatan besar jurusan.</p>
+                </div>
+
+                <!-- Pendidikan 3: SMP -->
+                <div class="profile-card">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-1.5">
+                        <h3 class="text-base md:text-lg font-bold text-white">SMPIT Budhi Luhur Cimahi</h3>
+                        <span class="pill-badge-muted self-start sm:self-auto">2017 - 2020</span>
+                    </div>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-2">Aktif merancang dan mengorganisasi berbagai kegiatan besar organisasi dan sekolah.</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">Memegang peran sebagai Ketua di beberapa organisasi.</p>
+                </div>
             </div>
         </section>
 
         <!-- PROYEK PORTFOLIO -->
-        <section class="mb-12">
-            <h2 class="text-lg md:text-xl font-bold text-white mb-4 flex items-center gap-2.5">
+        <section class="mb-14">
+            <h2 class="text-lg md:text-xl font-bold text-white mb-5 flex items-center gap-2.5">
                 <div class="p-1.5 bg-blue-500/10 rounded-lg text-cyan-400"><i data-lucide="folder" class="w-4 h-4"></i></div>
                 Proyek & Karya
             </h2>
             
-            <div class="grid sm:grid-cols-2 gap-4">
-                <div class="profile-card flex flex-col justify-between">
+            <div class="grid sm:grid-cols-2 gap-6">
+                <!-- Proyek 1: TugasKu.App (Tanpa Gambar) -->
+                <a href="https://github.com/Bhadthepramdirdjo/TugasKu.pp.git" target="_blank" class="profile-card flex flex-col justify-between group hover:border-cyan-500/30 transition-all cursor-pointer">
                     <div>
-                        <h3 class="text-base font-bold text-white mb-2">Website Tim iCraft</h3>
-                        <p class="text-sm text-gray-300 mb-5 leading-relaxed">Website portofolio tim magang dengan desain dark-mode modern, interaktivitas tinggi, dan profil lengkap.</p>
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors flex items-center gap-2">
+                                TugasKu.App
+                            </h3>
+                            <div class="p-2 bg-white/5 rounded-lg border border-white/5 text-gray-400 group-hover:text-cyan-400 group-hover:bg-cyan-500/10 transition-colors">
+                                <i data-lucide="github" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-300 mb-6 leading-relaxed">Aplikasi manajemen tugas berbasis web yang dirancang khusus untuk mahasiswa, memungkinkan pengguna mencatat, mengelola, dan memantau progres tugas dengan mudah serta terstruktur.</p>
                     </div>
-                    <div class="flex flex-wrap gap-2 pt-3 border-t border-white/5">
-                        <span class="text-xs px-2.5 py-1 bg-white/5 rounded-md text-gray-200">HTML5</span>
-                        <span class="text-xs px-2.5 py-1 bg-white/5 rounded-md text-gray-200">Tailwind CSS</span>
-                        <span class="text-xs px-2.5 py-1 bg-white/5 rounded-md text-gray-200">JavaScript</span>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5">
+                        <span class="project-tech-tag">
+                            <img src="https://cdn.simpleicons.org/php/white" class="w-3.5 h-3.5" alt="PHP"> PHP
+                        </span>
+                        <span class="project-tech-tag">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-3.5 h-3.5" alt="CSS"> CSS
+                        </span>
+                        <span class="project-tech-tag">
+                            <img src="https://cdn.simpleicons.org/javascript/white" class="w-3.5 h-3.5" alt="JavaScript"> JavaScript
+                        </span>
                     </div>
-                </div>
+                </a>
+
+                <!-- Proyek 2: IMS (Tanpa Gambar - Berdampingan dengan TugasKu) -->
+                <a href="https://github.com/Bhadthepramdirdjo/Inventory-Management-System-IMS.git" target="_blank" class="profile-card flex flex-col justify-between group hover:border-cyan-500/30 transition-all cursor-pointer">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors flex items-center gap-2">
+                                IMS (Inventory Management System)
+                            </h3>
+                            <div class="p-2 bg-white/5 rounded-lg border border-white/5 text-gray-400 group-hover:text-cyan-400 group-hover:bg-cyan-500/10 transition-colors">
+                                <i data-lucide="github" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-300 mb-6 leading-relaxed">Aplikasi Android pengelolaan inventaris barang secara digital dengan alur peminjaman, persetujuan admin, pengembalian, dan pencatatan riwayat transaksi.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5">
+                        <span class="project-tech-tag">
+                            <img src="https://cdn.simpleicons.org/android/white" class="w-3.5 h-3.5" alt="Android"> Android
+                        </span>
+                        <span class="project-tech-tag">
+                            <img src="https://cdn.simpleicons.org/kotlin/white" class="w-3.5 h-3.5" alt="Kotlin"> Java / Kotlin
+                        </span>
+                        <span class="project-tech-tag">
+                            <i data-lucide="server" class="w-3.5 h-3.5 text-cyan-400"></i> REST API
+                        </span>
+                    </div>
+                </a>
                 
-                <div class="profile-card flex flex-col justify-between">
+                <!-- Proyek 3: KerjaKita.App (Dengan Gambar) -->
+                <a href="https://github.com/Bhadthepramdirdjo/KerjaKita.git" target="_blank" class="profile-card flex flex-col justify-between overflow-hidden group hover:border-cyan-500/30 transition-all cursor-pointer">
                     <div>
-                        <h3 class="text-base font-bold text-white mb-2">Aplikasi Manajemen Tugas</h3>
-                        <p class="text-sm text-gray-300 mb-5 leading-relaxed">Aplikasi berbasis web untuk mencatat, melacak, dan mengelola alur kerja harian secara efisien.</p>
+                        <div class="w-full h-44 bg-[#0f172a] rounded-xl mb-4 overflow-hidden border border-white/5 relative">
+                            <img src="../assets/images/bhadriko/img/Kerjakita-app.png" alt="KerjaKita.App" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute top-2.5 right-2.5 p-1.5 bg-[#161f30]/80 backdrop-blur rounded-lg border border-white/10 text-gray-400 group-hover:text-cyan-400 transition-colors">
+                                <i data-lucide="github" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-base font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors flex items-center justify-between">
+                            KerjaKita.App
+                            <i data-lucide="external-link" class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400"></i>
+                        </h3>
+                        <p class="text-sm text-gray-300 mb-5 leading-relaxed">Platform marketplace lowongan kerja (job portal) berbasis web menggunakan Laravel 12 untuk menghubungkan pemberi kerja dan pencari kerja.</p>
                     </div>
                     <div class="flex flex-wrap gap-2 pt-3 border-t border-white/5">
-                        <span class="text-xs px-2.5 py-1 bg-white/5 rounded-md text-gray-200">JavaScript</span>
-                        <span class="text-xs px-2.5 py-1 bg-white/5 rounded-md text-gray-200">Tailwind CSS</span>
+                        <span class="project-tech-tag">
+                            <img src="https://cdn.simpleicons.org/laravel/white" class="w-3.5 h-3.5" alt="Laravel"> Laravel
+                        </span>
+                        <span class="project-tech-tag">
+                            <img src="https://cdn.simpleicons.org/mysql/white" class="w-3.5 h-3.5" alt="MySQL"> MySQL
+                        </span>
+                        <span class="project-tech-tag">
+                            <img src="https://cdn.simpleicons.org/tailwindcss/white" class="w-3.5 h-3.5" alt="Tailwind CSS"> Tailwind CSS
+                        </span>
                     </div>
-                </div>
+                </a>
+
+                <!-- Proyek 4: Ruangin (Dengan Gambar) -->
+                <a href="https://github.com/Bhadthepramdirdjo/Ruangin.git" target="_blank" class="profile-card flex flex-col justify-between overflow-hidden group hover:border-cyan-500/30 transition-all cursor-pointer">
+                    <div>
+                        <div class="w-full h-44 bg-[#0f172a] rounded-xl mb-4 overflow-hidden border border-white/5 relative">
+                            <img src="../assets/images/bhadriko/img/Ruangin.png" alt="Ruangin" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute top-2.5 right-2.5 p-1.5 bg-[#161f30]/80 backdrop-blur rounded-lg border border-white/10 text-gray-400 group-hover:text-cyan-400 transition-colors">
+                                <i data-lucide="github" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-base font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors flex items-center justify-between">
+                            Ruangin
+                            <i data-lucide="external-link" class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400"></i>
+                        </h3>
+                        <p class="text-sm text-gray-300 mb-5 leading-relaxed">Platform web berbasis Laravel untuk mengotomatisasi sistem peminjaman ruangan di lingkungan institusi secara terorganisir dan transparan.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-3 border-t border-white/5">
+                        <span class="project-tech-tag">
+                            <img src="https://cdn.simpleicons.org/laravel/white" class="w-3.5 h-3.5" alt="Laravel"> Laravel
+                        </span>
+                        <span class="project-tech-tag">
+                            <img src="https://cdn.simpleicons.org/php/white" class="w-3.5 h-3.5" alt="PHP"> PHP
+                        </span>
+                        <span class="project-tech-tag">
+                            <img src="https://cdn.simpleicons.org/tailwindcss/white" class="w-3.5 h-3.5" alt="Tailwind CSS"> Tailwind CSS
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Proyek 5: Invoice.APP (Dengan Gambar) -->
+                <a href="https://github.com/Bhadthepramdirdjo/invoice.git" target="_blank" class="profile-card flex flex-col justify-between overflow-hidden group hover:border-cyan-500/30 transition-all cursor-pointer">
+                    <div>
+                        <div class="w-full h-44 bg-[#0f172a] rounded-xl mb-4 overflow-hidden border border-white/5 relative">
+                            <img src="../assets/images/bhadriko/img/Invoice-APP.png" alt="Invoice.APP" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute top-2.5 right-2.5 p-1.5 bg-[#161f30]/80 backdrop-blur rounded-lg border border-white/10 text-gray-400 group-hover:text-cyan-400 transition-colors">
+                                <i data-lucide="github" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-base font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors flex items-center justify-between">
+                            Invoice.APP
+                            <i data-lucide="external-link" class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400"></i>
+                        </h3>
+                        <p class="text-sm text-gray-300 mb-5 leading-relaxed">Sistem manajemen invoice faktur berbasis web untuk toko/UMKM guna mempermudah pencatatan produk, pelanggan, dan cetak tagihan profesional.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-3 border-t border-white/5">
+                        <span class="project-tech-tag">
+                            <img src="https://cdn.simpleicons.org/php/white" class="w-3.5 h-3.5" alt="PHP"> PHP
+                        </span>
+                        <span class="project-tech-tag">
+                            <img src="https://cdn.simpleicons.org/mysql/white" class="w-3.5 h-3.5" alt="MySQL"> MySQL
+                        </span>
+                        <span class="project-tech-tag">
+                            <img src="https://cdn.simpleicons.org/tailwindcss/white" class="w-3.5 h-3.5" alt="Tailwind CSS"> Tailwind CSS
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Proyek 6: CAKRA (Dengan Gambar) -->
+                <a href="https://github.com/AlfanARW/CAKRA.git" target="_blank" class="profile-card flex flex-col justify-between overflow-hidden group hover:border-cyan-500/30 transition-all cursor-pointer">
+                    <div>
+                        <div class="w-full h-44 bg-[#0f172a] rounded-xl mb-4 overflow-hidden border border-white/5 relative">
+                            <img src="../assets/images/bhadriko/img/Cakrea.png" alt="CAKRA" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute top-2.5 right-2.5 p-1.5 bg-[#161f30]/80 backdrop-blur rounded-lg border border-white/10 text-gray-400 group-hover:text-cyan-400 transition-colors">
+                                <i data-lucide="github" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-base font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors flex items-center justify-between">
+                            CAKRA
+                            <i data-lucide="external-link" class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400"></i>
+                        </h3>
+                        <p class="text-sm text-gray-300 mb-5 leading-relaxed">Aplikasi pelacakan pengiriman logistik untuk mengelola loket pendaftaran, penugasan kurir, pelacakan nomor resi, dan laporan pengiriman.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-3 border-t border-white/5">
+                        <span class="project-tech-tag">
+                            <img src="https://cdn.simpleicons.org/laravel/white" class="w-3.5 h-3.5" alt="Laravel"> Laravel
+                        </span>
+                        <span class="project-tech-tag">
+                            <img src="https://cdn.simpleicons.org/php/white" class="w-3.5 h-3.5" alt="PHP"> PHP
+                        </span>
+                        <span class="project-tech-tag">
+                            <img src="https://cdn.simpleicons.org/mysql/white" class="w-3.5 h-3.5" alt="MySQL"> MySQL
+                        </span>
+                        <span class="project-tech-tag">
+                            <img src="https://cdn.simpleicons.org/tailwindcss/white" class="w-3.5 h-3.5" alt="Tailwind CSS"> Tailwind CSS
+                        </span>
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -228,7 +420,7 @@
                         <img src="https://cdn.simpleicons.org/html5/white" class="w-4 h-4" alt="HTML5"> HTML5
                     </span>
                     <span class="tech-tag">
-                        <img src="https://cdn.simpleicons.org/css3/white" class="w-4 h-4" alt="CSS3"> CSS3
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-4 h-4" alt="CSS3"> CSS3
                     </span>
                     <span class="tech-tag">
                         <img src="https://cdn.simpleicons.org/javascript/white" class="w-4 h-4" alt="JavaScript"> JavaScript
