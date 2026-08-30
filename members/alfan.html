@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfan - Profil</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="../dist/output.css">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            background: radial-gradient(circle at 50% 15%, #16264c 0%, #0b111e 50%, #060913 100%);
+            background-attachment: fixed;
+            color: #94a3b8;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .profile-card {
+            background: #161f30;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            padding: 28px;
+        }
+        .contact-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 9999px;
+            font-size: 13px;
+            color: #e2e8f0;
+            white-space: nowrap;
+        }
+        .pill-badge {
+            display: inline-block;
+            padding: 4px 14px;
+            border-radius: 9999px;
+            font-size: 12px;
+            font-weight: 600;
+            background: rgba(236, 72, 153, 0.12);
+            color: #f472b6;
+            border: 1px solid rgba(236, 72, 153, 0.25);
+        }
+        .pill-badge-muted {
+            display: inline-block;
+            padding: 4px 14px;
+            border-radius: 9999px;
+            font-size: 12px;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.05);
+            color: #94a3b8;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .tech-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #f1f5f9;
+        }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden min-h-screen">
+
+    <!-- NAVBAR -->
+    <nav class="w-full pt-8 pb-6">
+        <div class="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="flex items-center justify-between">
+                <a href="../index.html" class="flex items-center gap-2 text-white font-bold text-sm hover:text-pink-300 transition-colors">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i> Kembali ke Beranda
+                </a>
+                
+                <div class="flex-shrink-0">
+                    <img src="../assets/images/icLogo.png" alt="iCraft Logo" class="h-7 md:h-9 object-contain">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="pt-6 pb-28 px-6 sm:px-8 lg:px-12 max-w-4xl mx-auto">
+        
+        <!-- PROFILE HEADER -->
+        <header class="profile-card mb-12 flex flex-col md:flex-row items-center md:items-center gap-8">
+            <div class="w-32 h-32 md:w-36 md:h-36 flex-shrink-0 rounded-full p-[3px] bg-gradient-to-tr from-[#ec4899] to-[#f472b6] shadow-xl shadow-pink-500/20">
+                <div class="w-full h-full rounded-full overflow-hidden flex items-center justify-center border-[4px] border-[#161f30]">
+                    <img src="../assets/images/alfan/img/alfan.jpg" alt="Alfan" class="w-full h-full object-cover">
+                </div>
+            </div>
+            
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-2xl md:text-3xl font-extrabold text-white mb-2 tracking-tight">Alfan</h1>
+                <p class="text-[#ec4899] font-bold tracking-widest text-xs uppercase mb-5">UI/UX Designer & Web Developer</p>
+                
+                <div class="flex flex-wrap justify-center md:justify-start gap-2.5">
+                    <div class="contact-badge">
+                        <i data-lucide="mail" class="w-4 h-4 text-pink-400"></i>
+                        <span>alfan@example.com</span>
+                    </div>
+                    <div class="contact-badge">
+                        <i data-lucide="map-pin" class="w-4 h-4 text-pink-400"></i>
+                        <span>Bandung, Indonesia</span>
+                    </div>
+                    <div class="contact-badge">
+                        <i data-lucide="building-2" class="w-4 h-4 text-pink-400"></i>
+                        <span>UNIKOM</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- TENTANG SAYA -->
+        <section class="mb-12">
+            <h2 class="text-lg md:text-xl font-bold text-white mb-4 flex items-center gap-2.5">
+                <div class="p-1.5 bg-pink-500/10 rounded-lg text-pink-400"><i data-lucide="user" class="w-4 h-4"></i></div>
+                Tentang Saya
+            </h2>
+            <div class="profile-card text-gray-300 leading-relaxed text-[15px] space-y-3">
+                <p>Halo! Saya Alfan, mahasiswa Teknik Informatika angkatan 2023 di Universitas Komputer Indonesia (UNIKOM). Saya berfokus pada perancangan antarmuka pengguna (UI/UX Design) serta pengembangan web front-end yang mengedepankan estetika, kenyamanan pengguna, dan konsistensi visual.</p>
+                <p>Bersama tim di <strong>iCraft Internship 2026</strong>, saya berdedikasi menciptakan prototipe desain yang intuitif dan menerjemahkannya ke dalam produk web fungsional.</p>
+            </div>
+        </section>
+
+        <!-- PENGALAMAN -->
+        <section class="mb-12">
+            <h2 class="text-lg md:text-xl font-bold text-white mb-4 flex items-center gap-2.5">
+                <div class="p-1.5 bg-pink-500/10 rounded-lg text-pink-400"><i data-lucide="briefcase" class="w-4 h-4"></i></div>
+                Pengalaman
+            </h2>
+            
+            <div class="space-y-4">
+                <div class="profile-card">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                        <h3 class="text-base md:text-lg font-bold text-white">UI/UX Designer Intern</h3>
+                        <span class="pill-badge self-start sm:self-auto">2026 - Sekarang</span>
+                    </div>
+                    <p class="text-xs font-bold text-pink-400 uppercase tracking-wider mb-3">iCraftDS</p>
+                    <p class="text-gray-300 text-sm leading-relaxed">Merancang wireframe, user flow, dan interactive prototype aplikasi, serta berkolaborasi dengan developer untuk memastikan hasil implementasi sesuai dengan standar desain.</p>
+                </div>
+                
+                <div class="profile-card">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                        <h3 class="text-base md:text-lg font-bold text-white">Graphic & UI Designer</h3>
+                        <span class="pill-badge-muted self-start sm:self-auto">2024 - 2025</span>
+                    </div>
+                    <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Proyek Desain & Kreatif</p>
+                    <p class="text-gray-300 text-sm leading-relaxed">Membuat identitas visual, mockup antarmuka aplikasi mobile dan web menggunakan Figma.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PENDIDIKAN -->
+        <section class="mb-12">
+            <h2 class="text-lg md:text-xl font-bold text-white mb-4 flex items-center gap-2.5">
+                <div class="p-1.5 bg-pink-500/10 rounded-lg text-pink-400"><i data-lucide="graduation-cap" class="w-4 h-4"></i></div>
+                Pendidikan
+            </h2>
+            
+            <div class="profile-card">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                    <h3 class="text-base md:text-lg font-bold text-white">S1 Teknik Informatika</h3>
+                    <span class="pill-badge self-start sm:self-auto">2023 - Sekarang</span>
+                </div>
+                <p class="text-xs font-bold text-pink-400 uppercase tracking-wider mb-3">Universitas Komputer Indonesia (UNIKOM)</p>
+                <p class="text-gray-300 text-sm leading-relaxed">Mempelajari interaksi manusia dan komputer (HCI), rekayasa perangkat lunak, dan teknologi perancangan antarmuka digital.</p>
+            </div>
+        </section>
+
+        <!-- PROYEK PORTFOLIO -->
+        <section class="mb-12">
+            <h2 class="text-lg md:text-xl font-bold text-white mb-4 flex items-center gap-2.5">
+                <div class="p-1.5 bg-pink-500/10 rounded-lg text-pink-400"><i data-lucide="folder" class="w-4 h-4"></i></div>
+                Proyek & Desain
+            </h2>
+            
+            <div class="grid sm:grid-cols-2 gap-4">
+                <div class="profile-card flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-base font-bold text-white mb-2">Desain Sistem Portofolio Tim</h3>
+                        <p class="text-sm text-gray-300 mb-5 leading-relaxed">Perancangan antarmuka pengguna berbasis dark-mode modern dan komponen visual konsisten.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-3 border-t border-white/5">
+                        <span class="text-xs px-2.5 py-1 bg-white/5 rounded-md text-gray-200">Figma</span>
+                        <span class="text-xs px-2.5 py-1 bg-white/5 rounded-md text-gray-200">Design System</span>
+                    </div>
+                </div>
+                
+                <div class="profile-card flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-base font-bold text-white mb-2">E-Commerce App Mockup</h3>
+                        <p class="text-sm text-gray-300 mb-5 leading-relaxed">Prototipe interaktif aplikasi belanja online dengan alur checkout yang optimal.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-3 border-t border-white/5">
+                        <span class="text-xs px-2.5 py-1 bg-white/5 rounded-md text-gray-200">Figma</span>
+                        <span class="text-xs px-2.5 py-1 bg-white/5 rounded-md text-gray-200">Prototyping</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KEAHLIAN TEKNIS & TOOLS -->
+        <section class="mb-12">
+            <h2 class="text-lg md:text-xl font-bold text-white mb-4 flex items-center gap-2.5">
+                <div class="p-1.5 bg-pink-500/10 rounded-lg text-pink-400"><i data-lucide="palette" class="w-4 h-4"></i></div>
+                Keahlian & Alat
+            </h2>
+            
+            <div class="profile-card">
+                <div class="flex flex-wrap gap-2.5">
+                    <span class="tech-tag">
+                        <img src="https://cdn.simpleicons.org/figma/white" class="w-4 h-4" alt="Figma"> Figma
+                    </span>
+                    <span class="tech-tag">
+                        <img src="https://cdn.simpleicons.org/html5/white" class="w-4 h-4" alt="HTML5"> HTML/CSS
+                    </span>
+                    <span class="tech-tag">
+                        <img src="https://cdn.simpleicons.org/tailwindcss/white" class="w-4 h-4" alt="Tailwind CSS"> Tailwind CSS
+                    </span>
+                    <span class="tech-tag">
+                        <img src="https://cdn.simpleicons.org/github/white" class="w-4 h-4" alt="GitHub"> GitHub
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOKUMEN & CV -->
+        <section class="mb-10">
+            <h2 class="text-lg md:text-xl font-bold text-white mb-4 flex items-center gap-2.5">
+                <div class="p-1.5 bg-pink-500/10 rounded-lg text-pink-400"><i data-lucide="file-text" class="w-4 h-4"></i></div>
+                Dokumen & CV
+            </h2>
+            
+            <div class="profile-card flex flex-col sm:flex-row sm:items-center justify-between gap-5">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-pink-500/10 rounded-xl flex items-center justify-center text-pink-400 border border-pink-500/20 flex-shrink-0">
+                        <i data-lucide="file-down" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Curriculum Vitae (CV)</h3>
+                        <p class="text-xs text-gray-400 mt-0.5">Dokumen PDF • Siap Unduh</p>
+                    </div>
+                </div>
+                <a href="#" class="px-6 py-2.5 rounded-full border border-white/10 text-gray-200 text-sm font-semibold hover:text-white hover:border-white/30 transition-all hover:bg-white/5 text-center">
+                    Unduh CV
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-white/5 py-8 text-center text-gray-500 text-sm">
+        <p>© 2026 Alfan • Tim iCraft Internship</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
